@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC | Our Menu</title>
+
+    <!-- Bootstrap 3 CSS: used for the container, grid and text alignment.
+         No Bootstrap JavaScript or custom JavaScript is used. -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+    <nav class="navbar food-navbar">
+        <div class="navbar-inner">
+
+            <!-- CSS-only toggle: no JavaScript required -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <a href="#top" class="navbar-brand">Food, LLC</a>
+
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="#chicken">Chicken</a></li>
+                <li><a href="#beef">Beef</a></li>
+                <li><a href="#sushi">Sushi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center page-title">Our Menu</h1>
+
+                <!-- The assignment requires ONE tall, full-width section.
+                     The labels below are text within this single section,
+                     not separate grid cards or sections. -->
+                <section class="menu-section" id="chicken">
+                    <h2 class="text-center">Our Food Collection</h2>
+
+                    <img
+                        src="images/grilled-chicken.jpg"
+                        alt="Grilled chicken served with rice and salad"
+                        class="food-photo">
+
+                    <p>
+                        Welcome to Food, LLC. We take pride in serving simple,
+                        delicious meals prepared with care. Our menu brings
+                        together familiar favourites and classic flavours in
+                        a comfortable setting.
+                    </p>
+
+                    <p id="beef">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+
+                    <p id="sushi">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Curabitur pretium tincidunt lacus. Nulla gravida orci
+                        a odio. Nullam varius, turpis et commodo pharetra,
+                        est eros bibendum elit, nec luctus magna felis
+                        sollicitudin mauris.
+                    </p>
+
+                    <p>
+                        Integer in mauris eu nibh euismod gravida. Duis ac
+                        tellus et risus vulputate vehicula. Donec lobortis
+                        risus a elit rutrum, eget tristique nulla congue.
+                    </p>
+
+                    <p>
+                        Thank you for visiting Food, LLC. We hope you enjoy
+                        exploring our menu and the classic flavours we offer.
+                    </p>
+
+                    <a href="#top" class="back-to-top">Back to Top</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

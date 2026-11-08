@@ -1,0 +1,198 @@
+/* Classic restaurant colours inspired by older Bootstrap-era websites */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f1eb;
+    color: #34291f;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Navbar */
+.food-navbar {
+    background-color: #333333;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    min-height: 65px;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.food-navbar .navbar-brand {
+    float: none;
+    height: auto;
+    padding: 17px 0;
+    color: #f8f5ef;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.food-navbar .navbar-brand:hover {
+    color: #e6c9a6;
+}
+
+/* Desktop/tablet: links and hamburger are hidden */
+.menu-toggle,
+.hamburger {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content */
+.page-title {
+    margin: 32px 0 28px;
+    color: #39291d;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.menu-section {
+    min-height: 1000px;
+    width: 100%;
+    margin: 0 0 35px;
+    padding: 30px;
+    overflow: auto;
+    background-color: #ead8c1;
+    border: 1px solid #d2b99c;
+    border-radius: 4px;
+    line-height: 1.75;
+    font-size: 18px;
+}
+
+.menu-section h2 {
+    margin: 0 0 24px;
+    color: #39291d;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu-section p {
+    margin-bottom: 20px;
+}
+
+.food-photo {
+    float: right;
+    width: 34%;
+    max-width: 440px;
+    height: auto;
+    margin: 0 0 20px 28px;
+    padding: 5px;
+    background: #fffaf2;
+    border: 1px solid #c6aa89;
+}
+
+.back-to-top {
+    display: block;
+    clear: both;
+    margin-top: 45px;
+    padding-top: 15px;
+    border-top: 1px solid #c6aa89;
+    color: #75401f;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.back-to-top:hover {
+    color: #3d2414;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 767px) {
+    .navbar-inner {
+        padding: 0 18px;
+    }
+
+    .food-navbar .navbar-brand {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 27px;
+        height: 3px;
+        background-color: #f8f5ef;
+        border-radius: 2px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-basis: calc(100% + 36px);
+        width: calc(100% + 36px);
+        margin: 0 -18px;
+        background-color: #e9dccb;
+        border-top: 1px solid #bba58d;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid #cdbba7;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px;
+        color: #493729;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    .nav-menu a:hover {
+        background-color: #d8c5ae;
+        color: #24180f;
+    }
+
+    /* Checkbox controls the menu open/closed state */
+    .menu-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+
+    .page-title {
+        margin: 25px 0 20px;
+        font-size: 32px;
+    }
+
+    .menu-section {
+        min-height: 1000px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .menu-section h2 {
+        font-size: 25px;
+    }
+
+    .food-photo {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 22px;
+    }
+}
